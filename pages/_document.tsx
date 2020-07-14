@@ -6,7 +6,7 @@ import theme from '../src/theme';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="zh-hans">
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
@@ -14,8 +14,12 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+
         </Head>
         <body>
+          {/* <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/base.min.css"/> */}
+          {/* <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/components.min.css"/> */}
+          <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/utilities.min.css"/>
           <Main />
           <NextScript />
         </body>

@@ -16,7 +16,7 @@ export default function About() {
         <Link href="/">Go to the main page</Link>
         <ProTip />
         <Copyright />
-      </Box>
+	</Box>
     </Container>
   );
 }
