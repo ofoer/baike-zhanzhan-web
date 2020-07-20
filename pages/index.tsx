@@ -1,45 +1,47 @@
 import React from 'react'
-import Container from '@material-ui/core/Container'
+import { Container, Button } from "@material-ui/core"
 import TopNav from "../components/TopNav"
+import TopTab from "../components/TopTab"
+import TopBanner from "../components/TopBanner"
+import TypeExample from "../components/TypeExample"
+import TOPTABS from "../constant/TOPTABS"
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-  children: React.ReactElement;
-}
+const items = [
+  {
+    title: "世环会",
+    banner: "/"
+  },
+  {
+    title: "世环会",
+    banner: "/"
+  },
+  {
+    title: "世环会",
+    banner: "/"
+  },
+  {
+    title: "世环会",
+    banner: "/"
+  },
+  {
+    title: "世环会",
+    banner: "/"
+  },
+  {
+    title: "世环会",
+    banner: "/"
+  }
+]
 
-export default function Index(props: Props) {
+export default function Index() {
   return (
     <>
-      <TopNav {...props} />
+      <TopNav />
+      <TopTab items={TOPTABS} />
       <Container maxWidth="xl">
-        asasa<br/>
-        asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
-        
-        asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>asasa<br/>
+        <TopBanner isLoading={true} items={items} />
+        <TypeExample isLoading={false} isReady={true} title="艺术" actionRight={<Button endIcon={<ArrowForwardIosIcon fontSize="small" />}>更多</Button>} />
       </Container>
     </>
   );
