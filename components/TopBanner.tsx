@@ -1,22 +1,26 @@
 import React from "react"
-import { Grid } from "@material-ui/core"
 import { Skeleton } from '@material-ui/lab'
-import { TopBannerProps, TopBannerItemProps } from "../interface/TopBanner"
+import { TopBannerProps } from "../interface/TopBanner"
+import CardEntry from "../components/CardEntry"
 
-const TopBanner:React.FC<TopBannerProps>=({ items, isLoading }) =>{
+const TopBanner:React.FC<TopBannerProps>=({ items, isLoading, rightItems }) =>{
+  const fir = rightItems.slice(0,3)
+  const sec = rightItems.slice(3,6)
+  console.log(items)
   return (
-    <Grid container spacing={2} className="my-4">
-      <Grid item xs={12} sm={12} md={5}>
-        {isLoading&&<Skeleton variant="rect" style={{paddingBottom: "52.9%"}} />}
-      </Grid>
-      <Grid container xs={12} sm={12} item md={7} spacing={2}>
-        {
-          isLoading
-            ? [0,1,2,3,4,5].map((it:number)=><Grid item key={it} xs={6} sm={6} md={4}><Skeleton variant="rect"  style={{paddingBottom: "56.38%"}} /></Grid>)
-            : items.map((ite: TopBannerItemProps,idx:number)=> <Grid item key={idx} md={4}>asa{ite}</Grid>)
-        }
-      </Grid>
-    </Grid>
+    <div className="md:flex my-4">
+      <div className="md:w-2/5 md:mr-4">
+        {!isLoading&&<Skeleton variant="rect" style={{paddingBottom: "56.9%"}} />}
+      </div>
+      <div className="md:w-3/5 hidden md:block">
+        <ul className="flex flex card-entries list-none pl-0 my-0 mb-4">
+          {fir.map((it,idx)=><CardEntry item={it} key={idx} className="md:w-1/3 mr-4" isLoading={isLoading} />)}
+        </ul>
+        <ul className="flex flex card-entries list-none pl-0 my-0">
+          {sec.map((it,idx)=><CardEntry item={it} key={idx} className="md:w-1/3 mr-4" isLoading={isLoading} />)}
+        </ul>
+      </div>
+    </div>
   )
 }
 

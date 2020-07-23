@@ -1,0 +1,6 @@
+ul.card-entries li:last-child{
+  margin-right: 0;
+}
+.bg-primary{
+  background-color: #1e52d8;
+}

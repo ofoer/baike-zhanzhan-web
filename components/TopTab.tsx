@@ -1,4 +1,5 @@
 import React from "react"
+import Link from '../src/Link'
 import AppBar from '@material-ui/core/AppBar'
 import { Tab, Tabs } from "@material-ui/core"
 import HideOnScroll from "./HideOnScroll"
@@ -26,7 +27,13 @@ const TopTabs:React.FC<TopTabsProps> = ({ items })=>{
               scrollButtons="auto"
               aria-label="scrollable auto tabs example"
             >
-              {items?.map((item:TopTab, idx:number)=><Tab key={idx} label={item.title} />)}
+              {items?.map((item:TopTab, idx:number)=>(
+            
+                  <Tab className="no-underline hover:no-underline" href="/industry/[industry]" as={`/industry/${item.key}`} component={Link} key={idx} label={item.title} />
+               
+                )
+              )}
+              
             </Tabs>
         </AppBar>
       </HideOnScroll>

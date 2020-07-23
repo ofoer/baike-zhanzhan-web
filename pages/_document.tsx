@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <link rel="shortcut icon" href="/assets/images/favicon.ico" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -20,6 +21,8 @@ export default class MyDocument extends Document {
           {/* <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/base.min.css"/> */}
           {/* <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/components.min.css"/> */}
           <link rel="stylesheet" href="//cdn.staticfile.org/tailwindcss/1.4.6/utilities.min.css"/>
+          <link rel="stylesheet" href="/assets/css/bk_zhanzhan.css"/>
+          
           <Main />
           <NextScript />
         </body>
