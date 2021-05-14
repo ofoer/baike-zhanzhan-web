@@ -4,6 +4,6 @@ export interface EntryProps {
 }
 export interface CardEntryProps {
   isLoading: boolean
-  className: string
+  className?: string
   item: EntryProps
 }

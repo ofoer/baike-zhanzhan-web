@@ -28,9 +28,7 @@ const TopTabs:React.FC<TopTabsProps> = ({ items })=>{
               aria-label="scrollable auto tabs example"
             >
               {items?.map((item:TopTab, idx:number)=>(
-            
                   <Tab className="no-underline hover:no-underline" href="/industry/[industry]" as={`/industry/${item.key}`} component={Link} key={idx} label={item.title} />
-               
                 )
               )}
               
