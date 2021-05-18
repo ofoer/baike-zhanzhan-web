@@ -24,10 +24,10 @@ export default function TopNav() {
           {/* <IconButton className="mr-4" title="职场词典">
             <ImportContactsIcon />
           </IconButton> */}
-          <IconButton className="mr-4" title="消息">
+          {/* <IconButton className="mr-4" title="消息">
             <NotificationsIcon />
           </IconButton>
-          <Avatar alt="Cindy Baker" src="https://file.ipadown.com/tophub/assets/images/noavatar.png" />
+          <Avatar alt="Cindy Baker" src="https://file.ipadown.com/tophub/assets/images/noavatar.png" /> */}
         </Toolbar>
       </AppBar>
     </>

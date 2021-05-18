@@ -7,12 +7,13 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "clsx": "latest",
+    "dayjs": "^1.10.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3002",
     "build": "next build",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
