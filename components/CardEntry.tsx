@@ -2,7 +2,6 @@ import React from "react"
 import Link from '../src/Link'
 import { Typography, CardActionArea } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
-import { CardEntryProps } from "../interface/CardEntry"
 
 const CardEntry:React.FC<any>=({isLoading, item})=>{
   return (
