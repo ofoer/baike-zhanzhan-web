@@ -3,8 +3,8 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
-import Avatar from '@material-ui/core/Avatar'
-import NotificationsIcon from '@material-ui/icons/Notifications'
+// import Avatar from '@material-ui/core/Avatar'
+// import NotificationsIcon from '@material-ui/icons/Notifications'
 // import ImportContactsIcon from '@material-ui/icons/ImportContacts'
 
 export default function TopNav() {
