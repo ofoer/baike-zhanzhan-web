@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Grid } from "@material-ui/core"
-import TopNav from "../components/TopNav"
+// import TopNav from "../components/TopNav"
 import CardEntry from "../components/CardEntry"
 import LayoutDefault from '../layout/default'
 
