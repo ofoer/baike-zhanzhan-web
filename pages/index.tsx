@@ -59,6 +59,11 @@ export default function Index() {
   const isLoading = false
   return (
     <LayoutDefault>
+      <video width="320" height="240" controls>
+    <source src="https://www.runoob.com/try/movie.mp4" type="video/mp4">
+    <source src="https://www.runoob.com/try/movie.ogg" type="video/ogg">
+    您的浏览器不支持 video 标签。
+</video>
       <figure>
       <figcaption>Listen to the T-Rex:</figcaption>
         <audio
