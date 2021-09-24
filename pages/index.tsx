@@ -59,7 +59,7 @@ export default function Index() {
   const isLoading = false
   return (
     <LayoutDefault>
-      <audio src="https://www.w3school.com.cn/i/horse.ogg"></audio>
+      <audio src="https://www.w3school.com.cn/i/horse.ogg" controls></audio>
       <Container maxWidth="xl" className='mt-4'>
         <div className="flex items-center justify-between mb-2">
           <h2 className="my-0 text-3xl">
