@@ -59,6 +59,15 @@ export default function Index() {
   const isLoading = false
   return (
     <LayoutDefault>
+      <figure>
+      <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+      </figure>
       <audio src="https://www.w3school.com.cn/i/horse.ogg" controls></audio>
       <Container maxWidth="xl" className='mt-4'>
         <div className="flex items-center justify-between mb-2">
