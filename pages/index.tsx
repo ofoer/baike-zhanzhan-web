@@ -60,8 +60,7 @@ export default function Index() {
   return (
     <LayoutDefault>
       <video width="320" height="240" controls>
-        <source src="https://www.runoob.com/try/movie.mp4" type="video/mp4" />
-        <source src="https://www.runoob.com/try/movie.ogg" type="video/ogg" />
+        <source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4" />
         您的浏览器不支持 video 标签。
       </video>
       <figure>
